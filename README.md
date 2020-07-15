@@ -1,4 +1,4 @@
-# C++ [![Practice](https://img.icons8.com/clouds/50/000000/cloud-network.png)](https://github.com/haroonarfan/c-#readme)
+# C++ [![Practice](https://img.icons8.com/cute-clipart/44/000000/property-script.png)](https://github.com/haroonarfan/c-#readme)
 <img src="https://ai.github.io/size-limit/logo.svg" align="right"
      alt="Size Limit logo by Haroon Arfan" width="120" height="178">
 This repository is for coding practice on my tablet.
