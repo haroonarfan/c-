@@ -1,12 +1,16 @@
 #include <iostream>
+#include <iterator>
 #include <sstream>
 #include <string>
 #include <vector>
 #include <algorithm>
+#include <numeric>
 
 using namespace std;
 
+// Functions
 int HCF(vector<int> numbers);
+int LCM(int num1, int num2);
 
 int main() {
     int Numbers;
@@ -22,6 +26,7 @@ int main() {
         myVector.push_back(Numbers);
 
     cout << "The HCF is: " << HCF(myVector) << endl;
+    cout << "The LCM is: " << accumulate(myVector.begin(),myVector.end(),1,LCM) << endl;
 
   return 0;
 }
@@ -40,4 +45,10 @@ int HCF(vector<int> numbers) {
         count = 0;
     }
     return Factor;
+}
+
+int LCM(int num1, int num2) {
+    vector<int> number {num1,num2};
+    int lcm = (num1 * num2 ) / HCF(number);
+    return lcm;
 }
