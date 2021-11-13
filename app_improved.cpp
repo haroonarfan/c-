@@ -6,7 +6,7 @@
 #include <algorithm>
 #include <numeric>
 
-using namespace std;
+using namespace std; 
 
 // Functions
 int HCF(vector<int> numbers);
@@ -47,6 +47,7 @@ int HCF(vector<int> numbers) {
     return Factor;
 }
 
+//This Function uses the function HCF
 int LCM(int num1, int num2) {
     vector<int> number {num1,num2};
     int lcm = (num1 * num2 ) / HCF(number);
